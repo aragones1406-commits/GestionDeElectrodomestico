@@ -1,4 +1,4 @@
-# Sistema de Gestión de [COMPTECH]
+# Sistema de Gestión de COMPTECH
 
 Aplicación de escritorio desarrollada en C# con Windows Forms para administrar los procesos de [describe brevemente qué hace tu sistema, ej: una biblioteca: libros, socios, préstamos, devoluciones y multas].
 
@@ -8,8 +8,8 @@ Proyecto del Primer Parcial de la asignatura Programación Avanzada en C#, Tecno
 
 | Nombre | Usuario de GitHub | Rol / Responsabilidad |
 | :--- | :--- | :--- |
-| [Andres Rivera] | [@tu-usuario-github] | Configuración del repositorio, pipeline CI y pruebas unitarias |
-| [Quezada Brithany] | [@usuario-compañero] | README, especificaciones y flujo de trabajo |
+| Andres Rivera | aragones1406-commmits | Configuración del repositorio, pipeline CI y pruebas unitarias |
+| Quezada Brithany | Thany30 | README, especificaciones y flujo de trabajo |
 
 ---
 
