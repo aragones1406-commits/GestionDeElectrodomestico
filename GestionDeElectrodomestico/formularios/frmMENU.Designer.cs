@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BTNREPORTES = new System.Windows.Forms.Button();
             this.BTNCONSULTAS = new System.Windows.Forms.Button();
             this.BTNVENTAS = new System.Windows.Forms.Button();
             this.BTNPRODUCTOS = new System.Windows.Forms.Button();
             this.BTNCLIENTES = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel1.BackColor = System.Drawing.Color.LightSlateGray;
             this.panel1.Controls.Add(this.BTNREPORTES);
             this.panel1.Controls.Add(this.BTNCONSULTAS);
             this.panel1.Controls.Add(this.BTNVENTAS);
@@ -53,26 +53,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1182, 208);
             this.panel1.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(498, 56);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(257, 45);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "COMPTECH";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GestionDeElectrodomestico.Properties.Resources.plantilla_mascota_logotipo_tienda_informatica_190190_142;
-            this.pictureBox1.Location = new System.Drawing.Point(83, 188);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1125, 553);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // BTNREPORTES
             // 
@@ -138,6 +119,26 @@
             this.BTNCLIENTES.Text = "CLIENTES";
             this.BTNCLIENTES.UseVisualStyleBackColor = true;
             this.BTNCLIENTES.Click += new System.EventHandler(this.BTNCLIENTES_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(498, 56);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(257, 45);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "COMPTECH";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GestionDeElectrodomestico.Properties.Resources.plantilla_mascota_logotipo_tienda_informatica_190190_142;
+            this.pictureBox1.Location = new System.Drawing.Point(83, 188);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1125, 553);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // frmMENU
             // 

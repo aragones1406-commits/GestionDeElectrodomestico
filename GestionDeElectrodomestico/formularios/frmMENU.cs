@@ -42,25 +42,25 @@ namespace Electrodomesticos
                     new Producto("P004", "Monitor Samsung 24 pulgadas", "Monitores", 180.00, 15));
 
                 ProductoControlador.listaProductos.Add(
-                    new Producto("P005", "Audífonos inalámbricos", "Audio", 35.00, 25));
+                    new Producto("P005", "Audifonos inalambricos", "Audio", 35.00, 25));
             }
 
             if (ClienteControlador.listaClientes.Count == 0)
             {
                 ClienteControlador.listaClientes.Add(
-                    new Cliente("0701234567", "Andres Rivera", "0991111111"));
+                    new Cliente("0709876543", "Luis Herrera", "0987654321"));
 
                 ClienteControlador.listaClientes.Add(
-                    new Cliente("0702345678", "Maria Torres", "0992222222"));
+                    new Cliente("0708765432", "Sofia Vargas", "0993810703"));
 
                 ClienteControlador.listaClientes.Add(
-                    new Cliente("0703456789", "Carlos Mendoza", "0993333333"));
+                    new Cliente("0707654321", "Diego Paredes", "0123456789"));
 
                 ClienteControlador.listaClientes.Add(
-                    new Cliente("0704567890", "Ana Rodriguez", "0994444444"));
+                    new Cliente("0706543210", "Valeria Ortiz", "9876543210"));
 
                 ClienteControlador.listaClientes.Add(
-                    new Cliente("0705678901", "Pedro Castro", "0995555555"));
+                    new Cliente("0705432109", "Jorge Salazar", "0988888888"));
             }
         }
 
@@ -95,6 +95,11 @@ namespace Electrodomesticos
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

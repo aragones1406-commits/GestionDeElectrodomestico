@@ -86,6 +86,7 @@ namespace Electrodomesticos.Formularios
             dgvConsultas.DataSource = consulta;
         }
 
+        // Prueba para crear el Pull RequestT
         private void frmCONSULTAS_Load(object sender, EventArgs e)
         {
 
