@@ -1,33 +1,31 @@
-# # Sistema de Gestión de [Nombre de tu Sistema, ej: Biblioteca]
+# Sistema de Gestión de [Nombre de tu Sistema, ej: Biblioteca]
 
 Aplicación de escritorio desarrollada en C# con Windows Forms para administrar los procesos de [describe brevemente qué hace tu sistema, ej: una biblioteca: libros, socios, préstamos, devoluciones y multas].
 
 Proyecto del Primer Parcial de la asignatura Programación Avanzada en C#, Tecnologías de información / Universidad Técnica de Machala (UTMACH).
 
-## 👥 Integrantes
+## Integrantes
 
 | Nombre | Usuario de GitHub | Rol / Responsabilidad |
 | :--- | :--- | :--- |
-| [Tu Nombre Completo] | [@tu-usuario-github] | Configuración del repositorio, pipeline CI y pruebas unitarias |
-| [Nombre de tu compañero] | [@usuario-compañero] | README, especificaciones y flujo de trabajo |
-| [Nombre de otro compañero, si hay] | [@usuario] | [Rol o responsabilidad] |
+| [Andres Rivera] | [@tu-usuario-github] | Configuración del repositorio, pipeline CI y pruebas unitarias |
+| [Quezada Brithany] | [@usuario-compañero] | README, especificaciones y flujo de trabajo |
 
 ---
 
-## 📖 Descripción del sistema
+## Descripción del sistema
 
-El sistema permite al personal de [tu área, ej: la biblioteca]:
+El sistema está diseñado para facilitar la gestión diaria del local de electrodomésticos, permitiendo al personal realizar las siguientes funciones:
 
-*   [Función 1, ej: Registrar, editar y consultar libros (código, título, autor, categoría, año, ejemplares disponibles).]
-*   [Función 2, ej: Administrar socios de la biblioteca.]
-*   [Función 3, ej: Registrar préstamos y controlar la disponibilidad de ejemplares.]
-*   [Función 4, ej: Registrar devoluciones.]
-*   [Función 5, ej: Calcular y gestionar multas por retraso.]
-*   [Función 6, ej: Realizar consultas sobre la información registrada.]
+*   **Gestión de Clientes:** Registrar, editar y consultar la información de los clientes (cédula, nombres, apellidos, dirección, teléfono).
+*   **Gestión de Productos (Inventario):** Administrar el catálogo de electrodomésticos (código, nombre, marca, precio, stock disponible).
+*   **Generación de Ventas:** Registrar las ventas realizadas, calculando automáticamente subtotales, IVA y total a pagar, descontando el stock de los productos vendidos.
+*   **Consultas y Reportes:** Buscar información de ventas por fecha o cliente, y consultar el estado actual del inventario.
+*   **Validación de Datos:** Control estricto en la validación de cédulas ecuatorianas y campos numéricos para evitar errores en el registro.
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 *   **Lenguaje:** C#
 *   **Framework:** .NET (Windows Forms)
@@ -36,7 +34,7 @@ El sistema permite al personal de [tu área, ej: la biblioteca]:
 
 ---
 
-## ⚙️ Flujo de trabajo (Git)
+## Flujo de trabajo (Git)
 
 Para mantener el orden en el proyecto, seguimos este flujo:
 
