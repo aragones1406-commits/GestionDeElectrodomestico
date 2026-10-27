@@ -1,0 +1,29 @@
+name: CI Proyecto Electrodomesticos
+
+on:
+  push:
+    branches: [ "master", "main" ]
+  pull_request:
+    branches: [ "master", "main" ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v2
+      
+    - name: Build with MSBuild
+      run: |
+        $solution = Get-ChildItem -Recurse -Filter *.sln | Select-Object -First 1
+        if ($solution) {
+          Write-Host "Compilando solución: $($solution.FullName)"
+          msbuild $solution.FullName /p:Configuration=Release
+        } else {
+          Write-Host "Compilando proyecto csproj directamente..."
+          $csproj = Get-ChildItem -Recurse -Filter *.csproj | Select-Object -First 1
+          msbuild $csproj.FullName /p:Configuration=Release
+        }
