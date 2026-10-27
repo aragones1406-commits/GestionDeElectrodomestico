@@ -39,6 +39,6 @@ El sistema está diseñado para facilitar la gestión diaria del local de electr
 Para mantener el orden en el proyecto, seguimos este flujo:
 
 1.  **Issues:** Cada tarea o error se registra en la pestaña *Issues*.
-2.  **Ramas (Branches):** Se crea una rama por cada tarea (ej. `feature/nueva-funcion`).
+2.  **Ramas (Branches):** Se crea una rama por cada tarea (ej. `feature/modulo-clientes`).
 3.  **Pull Requests:** Al terminar, se abre un PR para revisar los cambios antes de fusionarlos.
-4.  **CI:** GitHub Actions compila el proyecto automáticamente en cada PR para asegurar que no haya errores.
+4.  **CI:** GitHub Actions compila el proyecto automáticamente en cada PR.
