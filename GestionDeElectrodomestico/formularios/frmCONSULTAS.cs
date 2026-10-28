@@ -1,4 +1,4 @@
-﻿using Sistema_de_Gestion_de_Farmacia.Controlador;
+﻿using Electrodomesticos.Controlador;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
