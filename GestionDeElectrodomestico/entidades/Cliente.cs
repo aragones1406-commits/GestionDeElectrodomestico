@@ -35,6 +35,7 @@ namespace Sistema_de_Gestion_de_Farmacia.Entidades
 
         }
 
+        //Prueba Prueba
         public Cliente(string cedula, string nombre,
                         string telefono)
         {
