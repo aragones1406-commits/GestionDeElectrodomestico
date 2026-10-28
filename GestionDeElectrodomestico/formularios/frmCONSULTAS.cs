@@ -32,7 +32,7 @@ namespace Electrodomesticos.Formularios
         private void clientesOrdenadosAlfabeticamenteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var consulta =
-                ClienteControlador.listaClientes
+                Cliente.listaClientes
                 .OrderBy(c => c.Nombre)
                 .ToList();
 

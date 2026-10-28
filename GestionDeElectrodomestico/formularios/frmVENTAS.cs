@@ -42,7 +42,7 @@ namespace Electrodomesticos.Formularios
         {
             cmbCliente.DataSource = null;
             cmbCliente.DataSource =
-                ClienteControlador.listaClientes.ToList();
+                Cliente.listaClientes.ToList();
 
             cmbCliente.DisplayMember = "Nombre";
         }
