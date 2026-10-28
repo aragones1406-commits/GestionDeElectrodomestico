@@ -1,5 +1,5 @@
-﻿using Sistema_de_Gestion_de_Farmacia.Controlador;
-using Sistema_de_Gestion_de_Farmacia.Entidades;
+﻿using Electrodomesticos.Controlador;
+using Electrodomesticos.Entidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +14,7 @@ namespace Electrodomesticos.Formularios
 {
     public partial class frmCLIENTES : Form
     {
-        Sistema_de_Gestion_de_Farmacia.Controlador.TListaCliente cc = new Sistema_de_Gestion_de_Farmacia.Controlador.TListaCliente();
+        Electrodomesticos.Controlador.TListaCliente cc = new Sistema_de_Gestion_de_Farmacia.Controlador.TListaCliente();
 
         int indice = -1;
 
@@ -49,7 +49,7 @@ namespace Electrodomesticos.Formularios
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            Sistema_de_Gestion_de_Farmacia.Entidades.Cliente c = new Sistema_de_Gestion_de_Farmacia.Entidades.Cliente();
+            Electrodomesticos.Entidades.Cliente c = new Electrodomesticos.Entidades.Cliente();
 
             c.Cedula = txtCedula.Text;
             c.Nombre = txtNombre.Text;
@@ -92,13 +92,13 @@ namespace Electrodomesticos.Formularios
 
             else
             {
-                Sistema_de_Gestion_de_Farmacia.Controlador.TListaCliente.listaClientes[indice].Cedula =
+                Electrodomesticos.Controlador.TListaCliente.listaClientes[indice].Cedula =
                     txtCedula.Text;
 
-                Sistema_de_Gestion_de_Farmacia.Controlador.TListaCliente.listaClientes[indice].Nombre =
+                Electrodomesticos.Controlador.TListaCliente.listaClientes[indice].Nombre =
                     txtNombre.Text;
 
-                Sistema_de_Gestion_de_Farmacia.Controlador.TListaCliente.listaClientes[indice].Telefono =
+                Electrodomesticos.Controlador.TListaCliente.listaClientes[indice].Telefono =
                     txtTelefono.Text;
 
                 MostrarClientes();
@@ -116,8 +116,8 @@ namespace Electrodomesticos.Formularios
         {
             if (dgvClientes.CurrentRow != null)
             {
-                Sistema_de_Gestion_de_Farmacia.Entidades.Cliente c =
-                    (Sistema_de_Gestion_de_Farmacia.Entidades.Cliente)dgvClientes.CurrentRow.DataBoundItem;
+                Electrodomesticos.Entidades.Cliente c =
+                    (Electrodomesticos.Entidades.Cliente)dgvClientes.CurrentRow.DataBoundItem;
 
                 Cliente.listaClientes.Remove(c);
 
