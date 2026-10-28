@@ -1,4 +1,5 @@
-﻿using Sistema_de_Gestion_de_Farmacia.Controlador;
+﻿
+using Electrodomesticos.controladores;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -32,7 +33,7 @@ namespace Electrodomesticos.Formularios
         private void clientesOrdenadosAlfabeticamenteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var consulta =
-                TListaCliente.listaClientes
+                ClienteControlador.listaClientes
                 .OrderBy(c => c.Nombre)
                 .ToList();
 
@@ -43,7 +44,7 @@ namespace Electrodomesticos.Formularios
         private void productosOrdenadosAlfabeticamenteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var consulta =
-                TListaProducto.listaProductos
+                ProductoControlador.listaProductos
                 .OrderBy(p => p.Nombre)
                 .ToList();
 
@@ -54,7 +55,7 @@ namespace Electrodomesticos.Formularios
         private void ventasMayoresA100ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var consulta =
-                TListaVenta.listaVentas
+                VentaControlador.listaVentas
                 .Where(v => v.Total > 100)
                 .ToList();
 
@@ -65,7 +66,7 @@ namespace Electrodomesticos.Formularios
         private void ventaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var consulta =
-               TListaVenta.listaVentas
+               VentaControlador.listaVentas
                .OrderByDescending(v => v.Total)
                .Take(1)
                .ToList();
@@ -77,7 +78,7 @@ namespace Electrodomesticos.Formularios
         private void ventasDeMenorValorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var consulta =
-              TListaVenta.listaVentas
+              VentaControlador.listaVentas
               .OrderBy(v => v.Total)
               .Take(1)
               .ToList();

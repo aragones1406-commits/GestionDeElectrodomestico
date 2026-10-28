@@ -22,21 +22,21 @@ namespace Electrodomesticos.Formularios
         {
             dgvReportes.DataSource = null;
             dgvReportes.DataSource =
-                TListaProducto.listaProductos.ToList();
+                ProductoControlador.listaProductos.ToList();
         }
 
         private void cLIENTESToolStripMenuItem_Click(object sender, EventArgs e)
         {
             dgvReportes.DataSource = null;
             dgvReportes.DataSource =
-                TListaCliente.listaClientes.ToList();
+                ClienteControlador.listaClientes.ToList();
         }
 
         private void vENTASToolStripMenuItem_Click(object sender, EventArgs e)
         {
             dgvReportes.DataSource = null;
             dgvReportes.DataSource =
-                TListaVenta.listaVentas.ToList();
+                VentaControlador.listaVentas.ToList();
         }
     }
 }

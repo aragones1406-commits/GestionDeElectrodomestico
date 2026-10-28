@@ -1,4 +1,5 @@
-﻿using Sistema_de_Gestion_de_Farmacia.Entidades;
+﻿using Electrodomesticos.entidades;
+using Sistema_de_Gestion_de_Farmacia.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;

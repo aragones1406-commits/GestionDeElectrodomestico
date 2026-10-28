@@ -182,5 +182,6 @@
   <ItemGroup>
     <None Include="Resources\plantilla-mascota-logotipo-tienda-informatica_190190-142.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

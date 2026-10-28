@@ -11,6 +11,7 @@ namespace Sistema_de_Gestion_de_Farmacia.Entidades
         private string cedula;
         private string nombre;
         private string telefono;
+        internal static object listaClientes;
 
         public string Cedula
         {
