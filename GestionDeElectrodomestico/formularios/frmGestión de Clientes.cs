@@ -14,7 +14,7 @@ namespace Electrodomesticos.Formularios
 {
     public partial class frmCLIENTES : Form
     {
-        Sistema_de_Gestion_de_Farmacia.Controlador.Cliente cc = new Sistema_de_Gestion_de_Farmacia.Controlador.Cliente();
+        Sistema_de_Gestion_de_Farmacia.Controlador.TListaCliente cc = new Sistema_de_Gestion_de_Farmacia.Controlador.TListaCliente();
 
         int indice = -1;
 
@@ -92,13 +92,13 @@ namespace Electrodomesticos.Formularios
 
             else
             {
-                Sistema_de_Gestion_de_Farmacia.Controlador.Cliente.listaClientes[indice].Cedula =
+                Sistema_de_Gestion_de_Farmacia.Controlador.TListaCliente.listaClientes[indice].Cedula =
                     txtCedula.Text;
 
-                Sistema_de_Gestion_de_Farmacia.Controlador.Cliente.listaClientes[indice].Nombre =
+                Sistema_de_Gestion_de_Farmacia.Controlador.TListaCliente.listaClientes[indice].Nombre =
                     txtNombre.Text;
 
-                Sistema_de_Gestion_de_Farmacia.Controlador.Cliente.listaClientes[indice].Telefono =
+                Sistema_de_Gestion_de_Farmacia.Controlador.TListaCliente.listaClientes[indice].Telefono =
                     txtTelefono.Text;
 
                 MostrarClientes();

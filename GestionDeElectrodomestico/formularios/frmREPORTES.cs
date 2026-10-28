@@ -29,7 +29,7 @@ namespace Electrodomesticos.Formularios
         {
             dgvReportes.DataSource = null;
             dgvReportes.DataSource =
-                Cliente.listaClientes.ToList();
+                TListaCliente.listaClientes.ToList();
         }
 
         private void vENTASToolStripMenuItem_Click(object sender, EventArgs e)

@@ -45,21 +45,21 @@ namespace Electrodomesticos
                     new Producto("P005", "Audifonos inalambricos", "Audio", 35.00, 25));
             }
 
-            if (Sistema_de_Gestion_de_Farmacia.Controlador.Cliente.listaClientes.Count == 0)
+            if (Sistema_de_Gestion_de_Farmacia.Controlador.TListaCliente.listaClientes.Count == 0)
             {
-                Sistema_de_Gestion_de_Farmacia.Controlador.Cliente.listaClientes.Add(
+                Sistema_de_Gestion_de_Farmacia.Controlador.TListaCliente.listaClientes.Add(
                     new Sistema_de_Gestion_de_Farmacia.Entidades.Cliente("0709876543", "Luis Herrera", "0987654321"));
 
-                Sistema_de_Gestion_de_Farmacia.Controlador.Cliente.listaClientes.Add(
+                Sistema_de_Gestion_de_Farmacia.Controlador.TListaCliente.listaClientes.Add(
                     new Sistema_de_Gestion_de_Farmacia.Entidades.Cliente("0708765432", "Sofia Vargas", "0993810703"));
 
-                Sistema_de_Gestion_de_Farmacia.Controlador.Cliente.listaClientes.Add(
+                Sistema_de_Gestion_de_Farmacia.Controlador.TListaCliente.listaClientes.Add(
                     new Sistema_de_Gestion_de_Farmacia.Entidades.Cliente("0707654321", "Diego Paredes", "0123456789"));
 
-                Sistema_de_Gestion_de_Farmacia.Controlador.Cliente.listaClientes.Add(
+                Sistema_de_Gestion_de_Farmacia.Controlador.TListaCliente.listaClientes.Add(
                     new Sistema_de_Gestion_de_Farmacia.Entidades.Cliente("0706543210", "Valeria Ortiz", "9876543210"));
 
-                Sistema_de_Gestion_de_Farmacia.Controlador.Cliente.listaClientes.Add(
+                Sistema_de_Gestion_de_Farmacia.Controlador.TListaCliente.listaClientes.Add(
                     new Sistema_de_Gestion_de_Farmacia.Entidades.Cliente("0705432109", "Jorge Salazar", "0988888888"));
             }
         }

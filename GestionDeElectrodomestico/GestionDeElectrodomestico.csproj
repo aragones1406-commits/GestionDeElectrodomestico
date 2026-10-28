@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="controladores\Cliente.cs" />
+    <Compile Include="controladores\TListaCliente.cs" />
     <Compile Include="controladores\ProductoControlador.cs" />
     <Compile Include="controladores\VentaControlador.cs" />
     <Compile Include="entidades\Cliente.cs" />
