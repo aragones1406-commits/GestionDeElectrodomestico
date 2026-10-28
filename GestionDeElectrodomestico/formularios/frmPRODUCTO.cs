@@ -14,7 +14,7 @@ namespace Electrodomesticos.Formularios
 {
     public partial class frmPRODUCTO : Form
     {
-        ProductoControlador pc = new ProductoControlador();
+        TListaProducto pc = new TListaProducto();
 
         int indice = -1;
 
@@ -39,7 +39,7 @@ namespace Electrodomesticos.Formularios
         {
             dgvProductos.DataSource = null;
             dgvProductos.DataSource =
-                ProductoControlador.listaProductos.ToList();
+                TListaProducto.listaProductos.ToList();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -111,19 +111,19 @@ namespace Electrodomesticos.Formularios
 
             else
             {
-                ProductoControlador.listaProductos[indice].Codigo =
+                TListaProducto.listaProductos[indice].Codigo =
                     txtCodigo.Text;
 
-                ProductoControlador.listaProductos[indice].Nombre =
+                TListaProducto.listaProductos[indice].Nombre =
                     txtNombre.Text;
 
-                ProductoControlador.listaProductos[indice].Categoria =
+                TListaProducto.listaProductos[indice].Categoria =
                     cmbCategoria.Text;
 
-                ProductoControlador.listaProductos[indice].Precio =
+                TListaProducto.listaProductos[indice].Precio =
                     Convert.ToDouble(txtPrecio.Text);
 
-                ProductoControlador.listaProductos[indice].Stock =
+                TListaProducto.listaProductos[indice].Stock =
                     Convert.ToInt32(txtStock.Text);
 
                 MostrarProductos();
@@ -143,7 +143,7 @@ namespace Electrodomesticos.Formularios
                 Producto p =
                     (Producto)dgvProductos.CurrentRow.DataBoundItem;
 
-                ProductoControlador.listaProductos.Remove(p);
+                TListaProducto.listaProductos.Remove(p);
 
                 MostrarProductos();
 

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Sistema_de_Gestion_de_Farmacia.Controlador
 {
-    public class VentaControlador
+    public class TListaVenta
     {
         public static List<Venta> listaVentas =
             new List<Venta>();

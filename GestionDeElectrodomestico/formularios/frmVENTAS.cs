@@ -14,7 +14,7 @@ namespace Electrodomesticos.Formularios
 {
     public partial class frmVENTAS : Form
     {
-        VentaControlador vc = new VentaControlador();
+        TListaVenta vc = new TListaVenta();
         public frmVENTAS()
         {
             InitializeComponent();
@@ -51,7 +51,7 @@ namespace Electrodomesticos.Formularios
         {
             cmbProducto.DataSource = null;
             cmbProducto.DataSource =
-                ProductoControlador.listaProductos.ToList();
+                TListaProducto.listaProductos.ToList();
 
             cmbProducto.DisplayMember = "Nombre";
         }

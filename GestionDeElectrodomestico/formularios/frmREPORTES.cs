@@ -22,7 +22,7 @@ namespace Electrodomesticos.Formularios
         {
             dgvReportes.DataSource = null;
             dgvReportes.DataSource =
-                ProductoControlador.listaProductos.ToList();
+                TListaProducto.listaProductos.ToList();
         }
 
         private void cLIENTESToolStripMenuItem_Click(object sender, EventArgs e)
@@ -36,7 +36,7 @@ namespace Electrodomesticos.Formularios
         {
             dgvReportes.DataSource = null;
             dgvReportes.DataSource =
-                VentaControlador.listaVentas.ToList();
+                TListaVenta.listaVentas.ToList();
         }
     }
 }

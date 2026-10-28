@@ -27,21 +27,21 @@ namespace Electrodomesticos
 
         private void CargarDatosIniciales()
         {
-            if (ProductoControlador.listaProductos.Count == 0)
+            if (TListaProducto.listaProductos.Count == 0)
             {
-                ProductoControlador.listaProductos.Add(
+                TListaProducto.listaProductos.Add(
                     new Producto("P001", "Laptop Lenovo", "Computadoras", 650.00, 10));
 
-                ProductoControlador.listaProductos.Add(
+                TListaProducto.listaProductos.Add(
                     new Producto("P002", "Mouse Logitech", "Accesorios", 15.00, 30));
 
-                ProductoControlador.listaProductos.Add(
+                TListaProducto.listaProductos.Add(
                     new Producto("P003", "Teclado mecánico", "Accesorios", 45.00, 20));
 
-                ProductoControlador.listaProductos.Add(
+                TListaProducto.listaProductos.Add(
                     new Producto("P004", "Monitor Samsung 24 pulgadas", "Monitores", 180.00, 15));
 
-                ProductoControlador.listaProductos.Add(
+                TListaProducto.listaProductos.Add(
                     new Producto("P005", "Audifonos inalambricos", "Audio", 35.00, 25));
             }
 
