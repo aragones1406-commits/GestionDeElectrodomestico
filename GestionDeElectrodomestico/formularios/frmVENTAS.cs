@@ -1,5 +1,5 @@
-﻿using Sistema_de_Gestion_de_Farmacia.Controlador;
-using Sistema_de_Gestion_de_Farmacia.Entidades;
+﻿using Electrodomesticos.Controlador;
+using Electrodomesticos.Entidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +14,7 @@ namespace Electrodomesticos.Formularios
 {
     public partial class frmVENTAS : Form
     {
-        VentaControlador vc = new VentaControlador();
+        TListaVenta vc = new TListaVenta();
         public frmVENTAS()
         {
             InitializeComponent();
@@ -42,7 +42,7 @@ namespace Electrodomesticos.Formularios
         {
             cmbCliente.DataSource = null;
             cmbCliente.DataSource =
-                Cliente.listaClientes.ToList();
+                TListaCliente.listaClientes.ToList();
 
             cmbCliente.DisplayMember = "Nombre";
         }
@@ -51,7 +51,7 @@ namespace Electrodomesticos.Formularios
         {
             cmbProducto.DataSource = null;
             cmbProducto.DataSource =
-                ProductoControlador.listaProductos.ToList();
+                TListaProducto.listaProductos.ToList();
 
             cmbProducto.DisplayMember = "Nombre";
         }

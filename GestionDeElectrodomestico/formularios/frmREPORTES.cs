@@ -1,4 +1,4 @@
-﻿using Sistema_de_Gestion_de_Farmacia.Controlador;
+﻿using Electrodomesticos.Controlador;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,21 +22,21 @@ namespace Electrodomesticos.Formularios
         {
             dgvReportes.DataSource = null;
             dgvReportes.DataSource =
-                ProductoControlador.listaProductos.ToList();
+                TListaProducto.listaProductos.ToList();
         }
 
         private void cLIENTESToolStripMenuItem_Click(object sender, EventArgs e)
         {
             dgvReportes.DataSource = null;
             dgvReportes.DataSource =
-                ClienteControlador.listaClientes.ToList();
+                TListaCliente.listaClientes.ToList();
         }
 
         private void vENTASToolStripMenuItem_Click(object sender, EventArgs e)
         {
             dgvReportes.DataSource = null;
             dgvReportes.DataSource =
-                VentaControlador.listaVentas.ToList();
+                TListaVenta.listaVentas.ToList();
         }
     }
 }

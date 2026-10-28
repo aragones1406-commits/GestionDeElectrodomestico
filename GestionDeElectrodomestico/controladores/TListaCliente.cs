@@ -5,19 +5,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sistema_de_Gestion_de_Farmacia.Controlador
+namespace Electrodomesticos.Controlador
 {
     public class TListaCliente
     {
-        public static List<TListaCliente> listaClientes =
-            new List<TListaCliente>();
+        public static List<Cliente> listaClientes =
+            new List<Cliente>();
 
-        public void AgregarCliente(TListaCliente c)
+        public void AgregarCliente(Cliente c)
         {
             listaClientes.Add(c);
         }
 
-        public void EliminarCliente(TListaCliente c)
+        public void EliminarCliente(Cliente c)
         {
             listaClientes.Remove(c);
         }

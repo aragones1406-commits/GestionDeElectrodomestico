@@ -1,15 +1,15 @@
-﻿using Sistema_de_Gestion_de_Farmacia.Entidades;
+﻿using Electrodomesticos.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sistema_de_Gestion_de_Farmacia.Controlador
+namespace Electrodomesticos.Controlador
 {
     public class TListaProducto
     {
-        public static List<Producto> listaProductos =
+        public static List<Producto> listaProductos =   
             new List<Producto>();
 
         public void AgregarProducto(Producto p)
