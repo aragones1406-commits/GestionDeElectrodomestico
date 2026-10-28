@@ -1,5 +1,5 @@
-﻿using Sistema_de_Gestion_de_Farmacia.Controlador;
-using Sistema_de_Gestion_de_Farmacia.Entidades;
+﻿using Electrodomesticos.Controlador;
+using Electrodomesticos.Entidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
