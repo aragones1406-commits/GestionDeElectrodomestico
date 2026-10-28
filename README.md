@@ -1,7 +1,7 @@
 
 # GestionDeElectrodomesticos
 
-Aplicación de escritorio desarrollada en C# con Windows Forms para administrar los procesos de [describe brevemente qué hace tu sistema, ej: una biblioteca: libros, socios, préstamos, devoluciones y multas].
+Es una aplicación de escritorio desarrollada en C# con Windows Forms para un local de electrodomésticos. El sistema sirve para automatizar y agilizar la gestión diaria del negocio, reemplazando el uso de cuadernos o Excel.
 
 Proyecto del Primer Parcial de la asignatura Programación Avanzada en C#, Tecnologías de información / Universidad Técnica de Machala (UTMACH).
 
